@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>HTML y HTML5</title>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+        <META NAME="description" CONTENT="Contenido para escribir HTML.">
+        <link rel="stylesheet" href="estilo.css" type="text/css"/>
+    </head>
+
+    <body>
+        <header id="inicio"> 
+            <img id="logo" src="logo.png" ><img>
+            <h1>Implementando la Web</h1>
+        </header>
+        <nav>
+            <div class="menu"><a href="#HTML">HTML</a></div>
+            <div class="menu"><a href="#tags">Tags</a></div>
+            <div class="menu"><a href="#SemanticaHMTL5">HTML5</a></div>
+            <div class="menu"><a href="#css">CSS</a></div>
+        </nav>
+
+        <main>
+            <section>
+                <article>
+                    <h2 id="HTML">¿Qué es HTML?</h2>
+                    <img height="200px" src="html.jpg">
+                    <p>Todo el mundo usa la web, pero muy pocas veces nos detenemos a pensar como está construida. El HTML (Lenguaje de marcado de hipertexto) es el más básico componente de desarrollo de la Web. Define el significado y la estructura del contenido web.</p>
+                    <p>En la actualidad tiene como objetivo indicar como va ordenado el contenido de una página web. Esto lo hace por medio de las marcas de hipertexto las cuales son etiquetas conocidas en inglés como tags.</p>
+                </article>
+                <article>
+                    <h2 id="tags">Tags principales</h2>
+                    <p>Además de estructurar el contenido de la web, también las etiquetas nos facilitan subrayar textos, usar negritas, añadir imágenes, definir hipervínculos entre muchas más funciones. A continuación se muestra una lista de las etiquetas más importantes:</p>
+                    <p>
+                        <ul>
+                            <li><strong>< html >: </strong>indica el comienzo del documento HTML.</li>
+                            <li><strong>< head >: </strong>indica que empieza la cabecera de la página. En ella se suele poner el título <strong>< title > </strong> </li>
+                            <li><strong>< body >: </strong>es el cuerpo de la página, donde va lo que se ve en el navegador.</li>
+                            <li><strong>< h1 >, < h2 >, etc.: </strong>son los títulos o encabezados. </li>
+                            <li><strong>< a >: </strong>define los enlaces.</li>
+                            <li><strong>< table >: </strong>es una tabla, y dentro de esta tenemos filas <strong>< tr ></strong> y celdas <strong> < td ></strong>.</li>
+                            <li><strong>< p >: </strong>el texto dentro de esta etiqueta forma un párrafo. </li>
+                            <li><strong>< img >: </strong>imágenes.</li>
+                            <li><strong>< ul >: </strong>los textos dentro de esta etiqueta se estructuran en listas. Mediante el uso de <strong>< li ></strong> definimos cada elemento de la lista, y usando <strong>< ol </strong></ol>> tendremos listas ordenadas.</li>
+                            <li><strong>< b ></strong> y <strong>< strong >:</strong> se utilizan para resaltar el texto.</li>
+                            <li><strong>< u >:</strong> texto subrayado.</li>
+                            <li><strong>< i ></strong> y <strong>< em >:</strong> texto en cursiva.</li>
+                        </ul>
+                    </p>
+                </article>
+                <article>
+                    <h2 id="SemanticaHMTL5">Semántica de HMTL5</h2>
+                    <p>La especificación HTML5 trae muchos nuevos elementos a los desarrolladores web, permitiéndoles describir la estructura de un documento web con semántica estandarizada.</p>
+                    <p>Todo el contenido incluido dentro del elemento <strong>< body ></strong> es parte de una sección. Las secciones en HTML5 pueden ser anidadas. Además de la sección principal, definida por el elemento <strong>< body ></strong>, los límites de la sección son definidos explícita o implícitamente. La secciones definidas explícitamente son el contenido definido en las etiquetas <strong>< body >,  < section >,  < article >,  < aside >, < footer >,  < header >, y < nav ></strong>.</p>
+                    <img src="estructuraHTML5.png">
+                </article>
+                <article>
+                    <h2>Las etiquetas semánticas de HTML5</h2>
+                    <ul>
+                        <li>El <strong>< body ></strong> es donde se colocan todos los elementos que se van a mostrar y que forman el contenido de la página.</li>
+                        <li><strong>< div ></strong> es el tipo de caja genérica.</li>
+                        <li><strong>< main ></strong> es la caja que contiene todo lo principal de la página.</li>
+                        <li><strong>< header ></strong> es la caja destinada al encabezado de la página, aquí se incluye el logotipo y el nombre de la web.</li>
+                        <li>La caja <strong>< footer ></strong> contiene la información que figura al pie de la página y es donde se ubica el ©, e información como el mapa de la página, autor, fecha y otros datos finales.</li>
+                        <li>La caja <strong>< nav ></strong> contiene todos los enlaces de la página, ya sea a otras secciones de nuestro mismo sitio web o a páginas externas.</li>
+                        <li>En las cajas <strong>< section ></strong> está el contenido genérico de la página.</li>
+                        <li>Las cajas <strong>< article ></strong> también están destinadas a contener el contenido de la página, aunque normalmente suelen utilizarse para mostrar información más reducida y concreta y que puede ser independiente del resto.</li>
+                        <li>Dentro de las cajas de tipo <strong>< aside ></strong> se ubican los contenidos que no tienen relación directa.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2 id="css">Estilos CSS y sus propiedades más utilizadas</h2>
+                    <p>Los estilos CSS son un conjunto de normas que indican cómo el navegador debe visualizar cada uno de los diferentes elementos que contiene una página web. Aunque estas normas habitualmente están relacionadas con aspectos visuales y de posicionamiento y colocación, con CSS3 cada vez existen más posibilidades (animaciones, transiciones, rotaciones...).</p>
+                    <p>Una de las utilidades más evidentes de CSS es la posibilidad de aplicar un estilo (un conjunto de características) a múltiples páginas HTML, no teniendo que repetir los mismos estilos cada vez que creamos un HTML nuevo. En este caso se podría utilizar un único fichero CSS externo (con formato .css) que afectaría al mismo tiempo a múltiples páginas HTML, o bien incluir el código CSS dentro del mismo fichero HTML (dentro del <strong>< head ></strong>), o utilizar estas dos posibilidades conjuntamente.</p>
+                    <h3>Selectores</h3>
+                    <p>Los selectores CSS son una lista de uno o más elementos HTML (nombrándolos a través de su id, class o tipo de etiqueta) que indican a quien van a afectar las sentencias CSS que siguen al selector.</p>
+                    <h3>Propiedades</h3>
+                    <p>Que afectan al texto: </p>
+                    <ul>
+                        <li><strong>color chocolate; </strong>Cambia el color del texto.</li>
+                        <li><strong>font-family: helvetica; </strong>Cambia la tipografía.</li>
+                        <li><strong>font-size: 20px; </strong>Cambia el tamaño de la letra.</li>
+                        <li><strong>font-weight: bold; </strong>Muestra el texto en negrita.</li>
+                        <li><strong>text-shadow: 2px 4px 6px #1162ac; </strong>Define una sombre en el texto.</li>
+                        <li><strong>text-align: center; </strong>Alineación del texto.</li>
+                        <li><strong>line-height: 70px; </strong>Alineación vertical del texto.</li>
+                    </ul>
+                    <p>Que afectan a las cajas</p>
+                    <ul>
+                        <li><strong>background-color: olive; </strong>Define un color de fondo de una caja.</li>
+                        <li><strong>padding: 20px;</strong>Define el espacio existente entre el contenido y el borde de la caja.</li>
+                        <li>margin: 35px;<strong></strong>Define el espacio existente entre cajas o bien entre cajas y los márgenes de la página.</li>
+                        <li><strong>box-shadow: 2px 7px 5px gray;</strong>Para definir una sombra de una caja.</li>
+                        <li><strong>float:left o right; </strong>Alinear a la derecha o la izquierda.</li>
+                    </ul>
+                    <p>Que afectan a los enlaces: </p>
+                    <ul>
+                        <li><strong>text-decoration: none; </strong>Elimina el subrayado que aparece por defecto en cualquier enlace.</li>
+                        <li><strong>color: chocolate; </strong>Para definir el color que debe tener el enlace cuando el cursor pase por encima es necesario utilizar el evento :hover, detrás del selector a.</li>
+                        <li><strong>cursor: default;</strong> Es posible definir un tipo de cursor (dentro de los existentes). Aunque los más habituales son "pointer" (el que aparece por defecto al crear un enlace).</li>
+                    </ul>
+                </article>
+            </section>
+            <aside>
+                <p>¿Te gustó el contenido de la web?, ¿Quieres seguir aprendiendo más?</p>
+                <p>Aquí te dejamos una lista de otros sitios que te pueden interesar: </p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/es/docs/HTML/HTML5">Mozilla.org</a></li>
+                    <li><a href="https://hipertextual.com/archivo/2013/05/entendiendo-html5-guia-para-principiantes/">Hipertextual</a></li>
+                    <li><a href="https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/que-es-html5/">Ionos</a></li>
+                    <li><a href="https://www.w3schools.com/html/">w3schools</a></li>
+                </ul>
+                <p>¿Te encontraste con algún termino desconocido? No te preocupes, el siguiente sitio te puede ayudar: </p>
+                <ul><li><a href="https://disenowebakus.net/glosario-diseno-web.php#definicionLetraB">Glosario: akus.net</a></li></ul>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Desarrollado por Jesús Alejandro en Septiembre del 2020. <a href="#inicio">Inicio </a></p>
+        </footer>
+    </body>
+
+</html>
